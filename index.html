@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt — Simple Residential Support</title>
+    <style>
+        /* BASIC RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+
+        /* TOP NAVIGATION BAR */
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; }
+        nav a:hover { text-decoration: underline; }
+
+        /* MAIN CONTENT CONTAINER */
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; }
+
+        /* HERO SECTION */
+        .hero {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .hero h1 { color: #2563eb; margin-bottom: 10px; }
+
+        /* SECTORS GRID */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd; transition: 0.3s; }
+        .card:hover { border-color: #2563eb; }
+        .card h3 { margin-bottom: 10px; }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* FORM SECTION */
+        .form-section { background: white; padding: 30px; border-radius: 8px; margin-top: 30px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        /*DISSABLE CARD*/
+        .card-disabled {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+    pointer-events: none; /* This stops all clicks, even on buttons inside */
+    filter: grayscale(100%); /* Optional: makes it look even more "off" */
+}
+        /* FOOTER */
+        footer { text-align: center; padding: 20px; color: #777; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FixIt</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Raise Ticket</a></li>
+                <li><a href="engineer_portal.html">Engineer Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h1>Smart Support Platform</h1>
+            <p>Select your sector or report an issue instantly.</p>
+            <a href="tickets.html" class="btn">Raise a Complaint</a>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>🌆 Society</h3>
+                <p>Maintenance and repair services for flats and apartments.</p>
+                <a href="Society_form.html" class="btn">Raise a Complaint</a>
+            </div>
+            <div class="card">
+                <h3>🏠 House</h3>
+                <p>Maintenance and repair services for homes.</p>
+                <a href="House_form.html" class="btn">Raise a Complaint</a>
+            </div>
+            <div class="card">
+                <h3>🏥 Hospital</h3>
+                <p>Emergency medical equipment and facility support.</p>
+                <a href="#" class="btn">Coming Soon</a>
+            </div>
+            <div class="card">
+                <h3>🎓 College</h3>
+                <p>Campus infrastructure and technical laboratory support.</p>
+                <a href="#" class="btn">Coming Soon</a>
+            </div>
+        </div>
+
+        <section class="form-section" id="login">
+            <h2>User Login</h2>
+            <p>Sign in to your account to track your complaints.</p>
+            <br>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Login</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>&copy; 2026 FixIt Platform. Built for simplicity.</footer>
+
+</body>
+</html>
