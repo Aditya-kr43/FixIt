@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -325,4 +326,246 @@
 </footer>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt — Choose Sector</title>
+    <style>
+        /* BASIC RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* TOP NAVIGATION BAR */
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTENT CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* SECTORS GRID */
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            border: 2px solid #eee;
+            width: 250px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            border-color: #2563eb;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* INFO SECTION (Filling the empty space) */
+        .info-box {
+            background: #eef2ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 50px;
+            text-align: left;
+            border-left: 5px solid #2563eb;
+        }
+
+        .info-box h4 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .stat-item b {
+            display: block;
+            font-size: 20px;
+            color: #2563eb;
+        }
+
+        .stat-item span {
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FixIt</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Raise Ticket</a></li>
+                <li><a href="engineer_portal.html">Engineer Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Where is the problem?</h1>
+        <p class="subtitle">Please select the appropriate sector to ensure we send the right specialist.</p>
+
+     <div class="grid">
+            <a href="residential_form.html" class="card">
+                <div class="icon">🌆</div>
+                <h3>Society</h3>
+                <p style="font-size: 12px; color: #888; margin-top: 10px;">Homes, Societies & Apartments</p>
+            </a>
+        <div class="grid">
+            <a href="residential_form.html" class="card">
+                <div class="icon">🏠</div>
+                <h3>House</h3>
+                <p style="font-size: 12px; color: #888; margin-top: 10px;">homes</p>
+            </a>
+
+            <div class="card" style="opacity: 0.6; cursor: not-allowed;">
+                <div class="icon">🏥</div>
+                <h3>Hospital</h3>
+                <p style="font-size: 12px; color: #888; margin-top: 10px;">Medical Facilities (Coming Soon)</p>
+            </div>
+
+            <div class="card" style="opacity: 0.6; cursor: not-allowed;">
+                <div class="icon">🎓</div>
+                <h3>College</h3>
+                <p style="font-size: 12px; color: #888; margin-top: 10px;">Institutes & Labs (Coming Soon)</p>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <b>15 min</b>
+                <span>Avg. Response</span>
+            </div>
+            <div class="stat-item">
+                <b>24/7</b>
+                <span>Support Availability</span>
+            </div>
+            <div class="stat-item">
+                <b>500+</b>
+                <span>Verified Engineers</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h4>How it works:</h4>
+            <ul>
+                <li>Select your sector (currently Society, Homes is active).</li>
+                <li>Provide your specific address details for the visit.</li>
+                <li>Choose the type of issue (Plumbing, Electrical, etc.) from our chatbot.</li>
+                <li>An engineer will be assigned to your ticket within minutes.</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+    </div>
+
+    <footer>
+        &copy; 2026 FixIt Platform. All rights reserved.
+    </footer>
+
+</body>
+>>>>>>> 4eebc12879fe42476f4e8afadd9e3f13645758cf
 </html>

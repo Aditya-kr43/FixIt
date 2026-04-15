@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -232,4 +233,118 @@
     }
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt — Complaint History</title>
+    <style>
+        /* CONSISTENT BASIC RESET */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; }
+
+        /* HEADER */
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; }
+
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 20px; }
+
+        /* HISTORY TABLE */
+        .history-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        h2 { color: #2563eb; margin-bottom: 15px; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+        th { background-color: #f8fafc; color: #64748b; font-size: 13px; text-transform: uppercase; }
+        .status { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        .status-pending { background: #fef3c7; color: #92400e; }
+
+        /* INVOICE SECTION */
+        .invoice { border: 2px dashed #cbd5e1; background: #fff; padding: 30px; border-radius: 8px; }
+        .invoice-header { display: flex; justify-content: space-between; margin-bottom: 20px; }
+        .invoice-details { border-top: 1px solid #eee; padding-top: 15px; font-size: 14px; }
+        .total-row { font-size: 18px; font-weight: bold; color: #2563eb; margin-top: 15px; text-align: right; }
+
+        .btn-print { background: #2563eb; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; }
+
+        footer { text-align: center; padding: 20px; color: #777; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FixIt</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tickets.html">Raise Ticket</a></li>
+                <li><a href="engineer_portal.html">Engineer Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="history-card">
+            <h2>Your Complaint History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Ticket ID</th>
+                        <th>Issue</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14 April 2026</td>
+                        <td>#FIX-8821</td>
+                        <td>Water Leakage</td>
+                        <td><span class="status status-pending">Engineer Assigned</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="invoice">
+            <div class="invoice-header">
+                <div>
+                    <h3 style="color: #2563eb;">INVOICE</h3>
+                    <p style="font-size: 12px; color: #777;">ID: #INV-00142</p>
+                </div>
+                <button class="btn-print" onclick="window.print()">Print Invoice</button>
+            </div>
+            
+            <div class="invoice-details">
+                <p><strong>Customer:</strong> Adarsh</p>
+                <p><strong>Address:</strong> B-102, Green Valley Apartments, Sector 62, Noida</p>
+                <p><strong>Service:</strong> Plumbing (Water Leakage)</p>
+                <hr style="margin: 15px 0; border: none; border-top: 1px solid #eee;">
+                <p>Base Service Fee: ₹250.00</p>
+                <p>Material Cost: TBD (After Inspection)</p>
+                <div class="total-row">Estimated Total: ₹250.00</div>
+            </div>
+            <p style="font-size: 11px; color: #94a3b8; margin-top: 20px; text-align: center;">Note: Final amount may vary based on materials used by the engineer.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="color: #2563eb; text-decoration: none; font-weight: bold;">← Back to Home</a>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 FixIt Platform. Built for simplicity.</footer>
+
+</body>
+>>>>>>> 4eebc12879fe42476f4e8afadd9e3f13645758cf
 </html>
